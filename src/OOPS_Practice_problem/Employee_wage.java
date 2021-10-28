@@ -15,7 +15,7 @@ public static void main(String[] args) {
 		break;
 	case 2:
 		System.out.println("Employee is Present - Part time");
-		employee_part_time_wage();
+	    employee_part_time_wage();
 		break;
 	default:
 		System.out.println("Employee is Absent");
@@ -24,13 +24,17 @@ public static void main(String[] args) {
 	
   }
      static void employee_daily_wage() {
+    	 int total_working_days_per_month = 20;
     	 int wage_per_hrs = 20;
     	 int working_hrs = 8;
-    	 System.out.println("Employee daily wages is "+wage_per_hrs*working_hrs);
+    	 System.out.println("Employee daily wages is "+wage_per_hrs*working_hrs*total_working_days_per_month);
      }
      static void employee_part_time_wage() {
+    	 int total_working_days_per_month = 20;
     	 int wage_per_hrs = 20;
     	 int working_hrs = 4;
-    	 System.out.println("Employee part time wages is "+wage_per_hrs*working_hrs);
+    	 System.out.println("Employee part time wages is "+wage_per_hrs*working_hrs*total_working_days_per_month);
      }
+   
+
 }
