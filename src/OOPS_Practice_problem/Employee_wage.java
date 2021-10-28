@@ -11,6 +11,7 @@ public static void main(String[] args) {
 	if (attendance_check == 1) {
 		System.out.println("Employee is Present");
 		employee_daily_wage();
+		 employee_part_wage();
 	}
 	else {
 		System.out.println("Employee is Absent");	
@@ -20,5 +21,10 @@ public static void main(String[] args) {
     	 int wage_per_hrs = 20;
     	 int working_hrs = 8;
     	 System.out.println("Employee daily wages is "+wage_per_hrs*working_hrs);
+     }
+     static void employee_part_wage() {
+    	 int wage_per_hrs = 20;
+    	 int working_hrs = 4;
+    	 System.out.println("Employee part time wages is "+wage_per_hrs*working_hrs);
      }
 }
